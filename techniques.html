@@ -6,6 +6,23 @@
     <link rel="stylesheet" href="assets\css\bootstrap.css">
     <link rel="stylesheet" href="assets\css\bootstrap-grid.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/fevi-icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/fevi-icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/fevi-icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/fevi-icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/fevi-icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/fevi-icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/fevi-icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/fevi-icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/fevi-icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/fevi-icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/fevi-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/fevi-icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/fevi-iconfavicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <style media="screen">
     p, ul{
@@ -21,13 +38,13 @@
         padding: 20px;
 
       }
-        h1, h3, h2 {
+        h3, h2 {
 
           font-family: old english text mt;
           color: #717ED3;
         }
         #color{
-          background-color: #EFECFF;
+          background-color: rgba(239, 236, 255, 0.7);
           padding: 20px;
           border-left: solid;
           border-color: #717ED3;
@@ -39,35 +56,42 @@
             font-family: old english text mt;
             color: white;
         }
-
-
                   body{
             background-image: url("assets/media/books.jpg");
             background-attachment: fixed;
             background-size: 100%;
             background-repeat: repeat-y;
-
           }
-
-
-
+          #brand{
+            padding: 0px;
+          }
+          h1{
+            margin-top: 60;
+            color: white;
+              font-family: old english text mt;
+          }
+          #fotter{
+            padding: 0px;
+          }
           </style>
 
   <body style="text-align: justified;">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html" style="font-family:"Space mono", monospace">Compendium-Art</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top", style="background-color: #717ED3";>
+  <a  class="navbar-brand" href="index.html" style="font-family: 'Space Mono'">
+  <img id="brand" src="assets/media/bootstrap-solid.svg" width="35px" height="35px" class="d-inline-block align-top">
+  Compendium-Art
+  </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
         <li class="nav-item active">
-          <a class="nav-link" href="history.html">History <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="history.html">History</a>
         </li>
         <li>
         <a class="nav-link" href="techniques.html">Techniques</a>
@@ -75,13 +99,16 @@
         <li class="nav-item">
           <a class="nav-link" href="budding_artists.html">Budding Artists</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="resources.html">Resources</a>
+        </li>
       </ul>
     </div>
   </nav>
 
 
           <div class="container">
-            <h1 style="color:white">General Forms And Art Techniques</h1>
+            <h1 >General Forms And Art Techniques</h1>
             <div id="color">
 
               <ul><a href="assets/media/techniques1.jpg"><img src="assets/media/techniques1.jpg" height="60%" width="60%" align="right"></a>
@@ -119,7 +146,6 @@ integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 crossorigin="anonymous"></script>
 <script src="assets/js/popper.min.js" charset="utf-8"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-      <center><footer>by <img src="assets/media/singh.jpg" height="5%" width="5%">SINGH</footer></center>
-
+        <center><footer>by <img id="fotter" src="assets/media/singh.jpg" height="50px" width="50px">SINGH</footer></center>
     </body>
     </html>

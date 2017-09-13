@@ -21,7 +21,7 @@
     <link rel="icon" type="image/png" sizes="192x192"  href="assets/fevi-icon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/fevi-icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/fevi-icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/fevi-iconfavicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/fevi-icon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -46,6 +46,11 @@
         background-attachment: fixed;
         background-size: 100%;
         background-repeat: repeat-y;
+      }
+      @media (max-width: 520px) {
+        .container {
+            margin-top: 120px; /* Increase top margin when the screen is less than 520 pixels wide */
+        }
       }
       footer{
         background-color: #717ED3;
@@ -82,19 +87,19 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="history.html">History</a>
         </li>
-        <li>
+        <li class="nav-item">
         <a class="nav-link" href="techniques.html">Techniques</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="budding_artists.html">Budding Artists</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="resources.html">Resources</a>
         </li>
       </ul>
@@ -108,7 +113,7 @@
       <h1>Resources</h1>
       <div id="color">
 
-      <p>This website can help you take a brife look at the world of Art, it's history and forms used to crerat great artworks of all time.</p><br>
+      <p>This website can help you take a brief look at the world of Art, it's history and forms used to create great artworks of all time.</p><br>
       <p></p>
       <ul><img src="assets/media/start learning.jpg" height="25%" width="25%" align="right">
 
@@ -133,7 +138,7 @@
 <li>drawspace.com — Online drawing lessons and tutorials.</li>
       </ul>
 
-      <p>This wefbsite is a my IP project. Built under the superior guidennce of our IP Lecturer, Mrs Muzammil Fatimah </p>
+      <p>This website is my IP project, built under the superior guidance of our IP Lecturer, Mrs Muzammil Fatimah </p>
     </div>
     </div>
     <script

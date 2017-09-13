@@ -22,7 +22,7 @@
     <link rel="icon" type="image/png" sizes="192x192"  href="assets/fevi-icon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/fevi-icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/fevi-icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/fevi-iconfavicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/fevi-icon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -36,7 +36,17 @@
         font-family: "Old english Text MT";
         src: url("assets/fonts/3Dumb-webfont.woff");
       }
-
+      @media (max-width: 520px) {
+        .container {
+            margin-top: 120px; /* Increase top margin when the screen is less than 520 pixels wide */
+        }
+      }
+      @media (max-width: 767px) {
+        iframe {
+            width: 100%; /* Change iframe width when the screen is less than 767 pixels wide */
+            height: 100%; /* Change iframe height when the screen is less than 767 pixels wide */
+        }
+      }
       img{
 
         padding: 20px;
@@ -91,13 +101,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="history.html">History</a>
         </li>
-        <li>
+        <li class="nav-item active">
         <a class="nav-link" href="techniques.html">Techniques</a>
         </li>
         <li class="nav-item">
